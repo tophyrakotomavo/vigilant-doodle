@@ -17,8 +17,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ZanaRoot",
-  description: "Building the Future, Rooted in Madagascar",
+  title: "Staf - FPVM",
+  description:
+    "Welcome to Staf - FPVM, your portal to explore and connect with the vibrant community of Ampandrana Taninanandrano.",
 };
 
 export default async function RootLayout({
