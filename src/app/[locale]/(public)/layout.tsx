@@ -22,7 +22,19 @@ const PublicLayout = async ({ children }: { children: React.ReactNode }) => {
         </div>
       </header>
       {children}
-      <Footer />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="157"
+        viewBox="0 0 1280 157"
+        fill="none"
+      >
+        <path
+          d="M0 156.552H1280V84.6733C782.636 -27.588 502.408 -28.859 0 84.6733V156.552Z"
+          fill="#190039"
+          // fill-opacity="0.3"
+        />
+      </svg>
     </div>
   );
 };
