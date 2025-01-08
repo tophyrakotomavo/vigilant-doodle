@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/app/_components/ui/card";
 
 export const Header = () => {
   return (
-    <div className=" bg-slate-50 p-4">
+    <div className=" bg-violet-800 p-12">
       {/* Stacked Cards Effect */}
       <div className="relative mx-auto ">
         {/* Background Cards */}
@@ -12,7 +12,7 @@ export const Header = () => {
 
         {/* Main Card */}
         <Card className="relative">
-          <CardContent className="flex justify-between p-6">
+          <CardContent className="flex justify-between p-12 h-96">
             <div className="grid gap-2">
               <h1 className="text-4xl font-bold text-purple-700">FPVM</h1>
               <h2 className="text-xl font-semibold text-orange-500">
