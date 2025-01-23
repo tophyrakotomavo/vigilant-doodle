@@ -1,5 +1,4 @@
 import { mysqlTable } from "drizzle-orm/mysql-core";
-import { UserRole } from "./enums";
 
 export const UserTable = mysqlTable("user", (t) => ({
   id: t
@@ -8,6 +7,7 @@ export const UserTable = mysqlTable("user", (t) => ({
   username: t.varchar("username", { length: 255 }).notNull().unique(),
   password: t.varchar("password", { length: 255 }).notNull(),
   email: t.varchar("email", { length: 255 }).notNull().unique(),
+  role: t.mysqlEnum("role", ["admin", "user"]).notNull().default("user"),
   address: t.varchar("address", { length: 255 }),
   phone: t.varchar("phone", { length: 20 }),
 }));
