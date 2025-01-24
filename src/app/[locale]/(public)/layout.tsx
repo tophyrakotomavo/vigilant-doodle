@@ -14,26 +14,21 @@ const PublicLayout = async ({ children }: { children: React.ReactNode }) => {
       <header className="bg-white rounded-lg shadow-sm sticky py-4 top-0 z-10 px-4">
         <div className=" h-fit flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image width={50} height={50} className="rounded-full" src="/LOGO-FPVM.webp" alt="Logo Staf" />
+            <Image
+              width={50}
+              height={50}
+              className="rounded-full"
+              src="/zanaroot.webp"
+              alt="Logo Staf"
+            />
           </Link>
           <LoginFormModal />
-      
         </div>
       </header>
       {children}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="157"
-        viewBox="0 0 1280 157"
-        fill="none"
-      >
-        <path
-          d="M0 156.552H1280V84.6733C782.636 -27.588 502.408 -28.859 0 84.6733V156.552Z"
-          fill="#190039"
-          // fill-opacity="0.3"
-        />
-      </svg>
+      <footer className="mt-24 py-2 text-center text-sm text-white/40 bg-gradient-to-b from-[#1c0c35b3] to-[#0C001E]">
+        © 2024 STAF. Tous droits réservés.
+      </footer>
     </div>
   );
 };
