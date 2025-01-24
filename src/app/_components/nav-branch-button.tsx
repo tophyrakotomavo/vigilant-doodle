@@ -6,7 +6,7 @@ export function NewBranchButton({ onClick }: NewBranchButtonProps) {
   return (
     <button
       onClick={onClick}
-      className="fixed bottom-5 left-5 flex items-center gap-2.5 px-2.5 py-2.5 rounded-lg border-3 border-white bg-white/20 shadow-[0_0_9.4px_0_#00D4FF] backdrop-blur-[15px] hover:bg-white/50 hover:shadow-[0_0_10px_2px_#00D4FF] transition-all duration-500 group animate-[rotate_3s_ease_infinite]"
+      className="fixed bottom-5 left-5 flex items-center gap-2.5 px-2.5 py-2.5 rounded-lg border-3 border-white bg-white/20 shadow-[0_0_9.4px_0_#00D4FF] backdrop-blur-[15px] hover:bg-white/50 hover:shadow-[0_0_10px_2px_#00D4FF] transition-all duration-1000 group animate-bounce"
     >
       <svg
         className="w-[50px] h-[50px]"
