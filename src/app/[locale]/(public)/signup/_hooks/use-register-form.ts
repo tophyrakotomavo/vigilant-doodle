@@ -1,7 +1,7 @@
 import { useScopedI18n } from "@/packages/locales/client";
 import { signupAction } from "@/services/user/user.action";
-import type { RegisterInput } from "@/services/user/user.model";
-import { zRegister } from "@/services/user/user.model";
+import type { RegisterInput } from "@/services/user/user.type";
+import { zRegister } from "@/services/user/user.type";
 
 import { formOptions, useForm } from "@tanstack/react-form";
 import { useMutation } from "@tanstack/react-query";

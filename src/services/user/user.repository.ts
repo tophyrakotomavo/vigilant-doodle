@@ -2,7 +2,7 @@
 
 import { UserTable } from "@/packages/db/schemas";
 import { db } from "@/packages/db";
-import { UserInput } from "./user.model";
+import { UserInput } from "./user.type";
 import { eq, and } from "drizzle-orm";
 
 export const createUser = async (input: UserInput) => {
@@ -12,7 +12,7 @@ export const createUser = async (input: UserInput) => {
 export const getUserByEmailAndPassword = async (email: string, password: string) => {
   return await db
     .select({
-      username: UserTable.username,
+      email: UserTable.email,
       password: UserTable.password,
     })
     .from(UserTable)

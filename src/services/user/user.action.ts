@@ -2,7 +2,7 @@
 
 import { getScopedI18n } from "@/packages/locales/server";
 import type { z } from "zod";
-import { zUserInput } from "./user.model";
+import { zUserInput } from "./user.type";
 import { createUser, getUserByEmailAndPassword } from "./user.repository";
 
 export const signinAction = async (input: z.infer<typeof zUserInput>) => {

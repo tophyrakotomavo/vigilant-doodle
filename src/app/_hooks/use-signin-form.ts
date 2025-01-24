@@ -1,6 +1,6 @@
 import { useScopedI18n } from "@/packages/locales/client";
 import { signinAction } from "@/services/user/user.action";
-import type { SigninInput } from "@/services/user/user.model";
+import type { SigninInput } from "@/services/user/user.type";
 import { formOptions, useForm } from "@tanstack/react-form";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
