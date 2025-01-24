@@ -23,7 +23,7 @@ export function SearchNav({ onSearch }: SearchProps) {
           <SearchIcon className="w-[24px] h-[24px]" />
         </button>
       ) : (
-        <div className="flex items-center gap-4 px-4 h-[60px] rounded-full border border-white bg-white/20 shadow-[0_0_16.6px_0_rgba(0,212,255,0.75)] backdrop-blur-md">
+        <div className="flex items-center gap-4 pr-4 h-[60px] rounded-full border border-white bg-white/20 shadow-[0_0_16.6px_0_rgba(0,212,255,0.75)] backdrop-blur-md">
           <input
             type="search"
             placeholder="Hitady"
@@ -34,7 +34,7 @@ export function SearchNav({ onSearch }: SearchProps) {
 
           <div className="relative group">
             <select
-              className="bg-white/20 cursor-pointer"
+              className="bg-white/20 cursor-pointer rounded-lg"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
