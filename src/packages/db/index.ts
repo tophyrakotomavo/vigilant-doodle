@@ -1,5 +1,4 @@
 import { env } from "@/env";
-import { drizzle } from "drizzle-orm/node-postgres";
-import * as schema from "./schemas";
+import { drizzle } from "drizzle-orm/mysql2";
 
-export const db = drizzle(env.DATABASE_URL, { schema });
+export const db = drizzle(env.DATABASE_URL!);

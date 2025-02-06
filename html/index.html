@@ -3,22 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css  ">
 </head>
-<style>
-    *{
-        margin: 0px;
-    }
-
-    .footerCourbe {
-    width: 100%;
-    height: 551px;
-    flex-shrink: 0;
-    background: rgba(25, 0, 57, 0.30);
-    }
-</style>
-
 <body>
-    <div class="footerCourbe" > h </div>
+    <nav>
+        <div class="nav--1" onclick="navigationSearch.search()" id="searchIcon">
+            <img src="Search Normal.png" alt="...">
+        </div>
+
+
+
+        <div class="nav--2" id="searchDevelop">
+            <div class="nav--2--2">
+                <input type="search" name="search" id="search" placeholder="Hitady">
+            </div>
+
+            <div class="categorie" id="category" onmouseover="navigationSearch.overflow()">
+                <label for="category" name="over">Fiangonana/Sampana/Daty</label>
+                <label class="check"><input class="radio" type="radio" name="over">Sampana</label>
+                <label class="check"><input class="radio" type="radio" name="over">Fiangonana</label>
+                <label class="check"><input class="radio" type="radio" name="over">Daty</label>
+            </div>
+
+            <img src="Search Normal.png" alt="...">
+
+            <div id="exit" onclick="navigationSearch.exitFunc()">
+                <img src="X 03.png" alt="...">
+            </div>
+
+              
+        </div>
+    </nav>
+
+
+    <header>
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" fill="none">
+            <g filter="url(#filter0_d_4_2)">
+              <path d="M-337.5 267.25C-337.5 28.2488 -143.751 -165.5 95.25 -165.5H1282.75C1466.52 -165.5 1615.5 -16.5228 1615.5 167.25V239.275C1615.5 383.269 1498.77 500 1354.77 500C1305.91 500 1258.03 513.732 1216.59 539.631L1157.03 576.857C1031.96 655.023 879.001 674.688 738.23 630.697L640 600L541.77 569.303C400.999 525.312 248.037 544.977 122.97 623.143L63.787 660.133C22.1025 686.186 -26.0644 700 -75.2207 700C-220.074 700 -337.5 582.574 -337.5 437.721V267.25Z" fill="url(#paint0_linear_4_2)" shape-rendering="crispEdges"/>
+              <path d="M-336.5 267.25C-336.5 28.8011 -143.199 -164.5 95.25 -164.5H1282.75C1465.97 -164.5 1614.5 -15.9705 1614.5 167.25V239.275C1614.5 382.717 1498.22 499 1354.77 499C1305.72 499 1257.66 512.785 1216.06 538.783L1156.5 576.009C1031.68 654.021 879.021 673.646 738.528 629.742L640.298 599.046L542.069 568.349C401.019 524.271 247.755 543.974 122.44 622.295L63.257 659.285C21.7315 685.239 -26.2518 699 -75.2207 699C-219.521 699 -336.5 582.021 -336.5 437.721V267.25Z" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
+            </g>
+            <defs>
+              <filter id="filter0_d_4_2" x="-413.2" y="-237.2" width="2104.4" height="1016.9" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="37.85"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.833333 0 0 0 0 1 0 0 0 0.7 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_2"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_2" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_4_2" x1="639" y1="-165.5" x2="639" y2="700" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00AEFF" stop-opacity="0.5"/>
+                <stop offset="1" stop-color="#006999" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+
+          <span class="text">STAF</span>
+          <h2>Fiangonana Protestanta Vaovao eto Madagasikara</h2>
+
+          
+    </header>
+
+
+
+
+    <div class="newBranch" onclick="addBranch.newBranchFunc()" id="newBranch">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" class="add">
+            <path d="M12.5 25H37.5M25 37.5V12.5" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="b--2">
+            Hampiditra Sampana
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <div class="descent"></div>
+
+    <section>
+        <div class="sec">
+            <span class="span--1">Sampana</span>
+            <span class="span--1">Fiangonana</span>
+        </div>
+
+
+
+        <div class="sampana">
+            <div class="child" id="childdren" onclick="developper.develop()">
+                <span class="fils--1">Sampana notadiavina</span>
+                <span class="fils--2">FPVM misy azy</span>
+            </div>
+            <div class="childDevelop" id="childDevelop">
+                <p>Contact:</p><span class="Contact"></span>
+                <p>Mail:</p><span class="Mail"></span>
+                <p class="fotoanaMalalaka" id="lienDevelop" onclick="developper.fotoana()">Fotoana Malalaka</p>
+    
+                <div class="libre" id="libreDevelop">
+                    <table>
+                        <caption class="title">2025</caption>
+    
+                        <tbody>
+                            <tr>
+                                <td>Fevrier</td>
+                                <td>Mars</td>
+                                <td>Avril</td>
+                                <td>Juin</td>
+                                <td>Aout</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>04</td>
+                                <td>10</td>
+                                <td>22</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>05</td>
+                                <td></td>
+                                <td>15</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>08</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div id="fin">
+                    x
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <form action="traitement.php" method="get">
+
+        <div class="page--1" id="dinganaI">
+            <h3>Fampidirana Sampana</h3>
+    
+            <div class="input--1">
+                <input class="myBtn--1" type="text" name="sampana" id="sampana" placeholder="Sampana" required>
+                <select name="derolant" id="deroulant" class="myBtn--1">
+                    <option value="Sampana" disabled selected>Sampana/Sampan'asa ao anatin'ny</option>
+                    <option value="Choral">Choral</option>
+                    <option value="AFAFI">AFAFI</option>
+                    <option value="FEFI">FEFI</option>
+                    <option value="LAMP">LAMP</option>
+                    <option value="KTZA">KTZA</option>
+                    <option value="KTZO">KTZO</option>
+                    <option value="GAE">GAE</option>
+                    <option value="SMK">SMK</option>
+                    <option value="STKVM">STKVM</option>
+                    <option value="MIM">MIM</option>
+                    <option value="Fanantenana">Fanantenana</option>
+                    <option value="SAHA">SAHA</option>
+                    <option value="Vondron'ny Mpampianatra">Vondron'ny Mpampianatra</option>
+                </select>
+
+
+
+                <input class="myBtn--1" type="text" name="fiangonana" id="fiangonana" placeholder="Fiangonana" required>
+                <input class="myBtn--1" type="number" name="MLV" id="MLV" placeholder="Mpiray Lohavolana" required>
+                <input class="myBtn--1" type="text" name="synoda" id="synoda" placeholder="Synodam-paritra" required>
+            </div>
+    
+            <div class="final--1">
+                <span class="final--1--go">Dingana 1/3</span>
+    
+                <div class="btn--1">
+                    <input class="secondbtn" type="button" value="Hiverina" onclick="overlay.isExitI()">
+                    <input class="secondbtn" type="button" value="Tohiny" onclick="overlay.submitI()">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="PageII">
+            <h3>Fampidirana Sampana</h3>
+
+            <div class="input--1">
+                <fieldset class="DatyF">
+                    <legend class="daty">Daty niforonana</legend>
+                    <input class="myBtn--1 myBtnVV" type="date" name="daty" id="daty">
+                </fieldset>
+                <label for="voatokana"><input type="checkbox" name="voatokana" id="notokanana">Efa voatokana</label>
+                <fieldset class="DatyV" id='MyPII'>
+                    <legend class="daty">Daty nanokanana</legend>
+                    <input class="myBtn--1 myBtnVV" type="date" name="daty" id="daty">
+                </fieldset>
+                <input class="myBtn--1" type="number" name="isaMpikambana" id="isaMpikambana" placeholder="Isan'ny mpikambana" required>
+                <input class="myBtn--1" type="number" name="isaBirao" id="isaBirao" placeholder="Isan'ny birao" required>
+            </div>
+
+            <div class="final--1">
+                <span class="final--1--go">Dingana 2/3</span>
+    
+                <div class="btn--1">
+                    <input class="secondbtn" type="button" value="Hiverina" onclick="overlay.isExitII()">
+                    <input class="secondbtn" type="button" value="Tohiny" onclick="overlay.submitII()">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="PageIII">
+            <h3>Fampidirana Sampana</h3>
+
+
+            <div class="input01">
+                <input class="myBtn--1" type="text" name="Filoha" id="filoha" placeholder="Filoha" required>
+                    <div>
+                        <input class="myBtn--1  myBtn--11" type="tel" name="tel" id="tel" placeholder="Laharana Finday">
+                        <input class="myBtn--1  myBtn--11" type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+
+                <input class="myBtn--1" type="text" name="filohaMpanampy" id="filohaMpanampy" placeholder="Filoha Mpanampy">
+                    <div>
+                        <input class="myBtn--1  myBtn--11" type="tel" name="" id="telMpanampy" placeholder="Laharana Finday">
+                        <input class="myBtn--1  myBtn--11" type="email" name="" id="emailMpanmpy" placeholder="E-mail">
+                    </div>
+                
+            </div>
+
+
+            <div class="final--1">
+                <span class="final--1--go">Dingana 3/3</span>
+    
+                <div class="btn--1">
+                    <input class="secondbtn" type="button" value="Hiverina" onclick="overlay.isExitIII()">
+                    <input class="secondbtn" type="button" value="Tohiny" onclick="overlay.submitIII()">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="PageIV">
+            <h3>For creating a new branch, please, log in</h3>
+    
+            <div class="input--1">
+                <input type="email" name="account" id="account" class="myBtn--1" placeholder="Account">
+                <input type="password" name="password" id="password" class="myBtn--1" placeholder="Password">
+            </div>
+    
+            <div class="final--1">
+                <div></div>    
+                <div class="btn--1">
+                    <input class="secondbtn" type="button" value="Hiverina" onclick="overlay.isExitIV()">
+                    <input class="secondbtn" type="button" value="Hampiditra" onclick="overlay.submitIV()">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="PageV">
+            <h3>Eo am-panatanterahana ny fangatahanao</h3>
+        </div>
+    </form>
+
+
+
+
+
+    <footer>
+        &copy; 2024 STAF. Tous droits réservés.
+    </footer>
+
+
+
+
+
+    <script src="dy.js"></script>
 </body>
 </html>

@@ -1,33 +1,20 @@
 "server only";
 
 import { UserTable } from "@/packages/db/schemas";
-import type { Connection } from "../Core";
-import { Core } from "../Core";
-import type { UserInput, UserOutput } from "./user.model";
+import { db } from "@/packages/db";
+import { UserInput } from "./user.type";
+import { eq, and } from "drizzle-orm";
 
-export class UserRepository extends Core {
-  constructor(ctx?: Connection) {
-    super(ctx);
-  }
+export const createUser = async (input: UserInput) => {
+  return await db.insert(UserTable).values(input);
+};
 
-  async getByUsernameOrEmail(
-    username: string,
-    email: string,
-  ): Promise<UserOutput | undefined> {
-    return this.db.query.UserTable.findFirst({
-      where: (q, { eq, or }) =>
-        or(eq(q.username, username), eq(q.email, email)),
-    });
-  }
-
-  async create(input: UserInput): Promise<UserOutput[]> {
-    return this.db.insert(UserTable).values(input).returning();
-  }
-
-  async getByIdentifier(identifier: string): Promise<UserOutput | undefined> {
-    return this.db.query.UserTable.findFirst({
-      where: (q, { eq, or }) =>
-        or(eq(q.email, identifier), eq(q.username, identifier)),
-    });
-  }
-}
+export const getUserByEmailAndPassword = async (email: string, password: string) => {
+  return await db
+    .select({
+      email: UserTable.email,
+      password: UserTable.password,
+    })
+    .from(UserTable)
+    .where(and(eq(UserTable.email, email), eq(UserTable.password, password)))
+};
